@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch-a-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    <h1 id="title">Etch-a-Sketch</h1>
 
+    <div id="toolbar">
+        <div id="slider-group">
+            <label for="grid-size-input">Grid Size:</label>
+            <input type="range" id="grid-size-input" min="2" max="100" value="16">
+            <span id="grid-size-value">16 x 16</span>
+        </div>
+        <div id="button-group">
+            <button type="button" id="create-grid-btn">Create Grid</button>
+            <button type="button" id="clear-grid-btn">Clear Grid</button>
+        </div>
     </div>
+
+    <div id="grid-container"></div>
+
     <script src="script.js" defer></script>
 </body>
 </html>
